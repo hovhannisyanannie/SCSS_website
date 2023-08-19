@@ -1,0 +1,15 @@
+{
+  "name": "imagine-live-scss",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./JS/script.js",
+  "scripts": {
+    "compile": "sass --watch --no-source-map  ./SCSS/style.scss ./dist/CSS/style.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.64.2"
+  }
+}

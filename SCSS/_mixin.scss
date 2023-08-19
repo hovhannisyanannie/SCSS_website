@@ -1,0 +1,55 @@
+
+  @mixin text-face($font-size,$font-weight,$line-height,$letter-spacing,$color, $text-align, $text-transform){
+    font-size:$font-size;
+    font-weight: $font-weight;
+    line-height:$line-height ;
+    letter-spacing: $letter-spacing;
+    color: $color;
+    text-align: $text-align;
+    text-transform: $text-transform;
+  }
+
+  @mixin btn($display, $background-color,$border-radius, $box-shadow,$width, $max-width, $white-space){
+    display: $display;
+    background-color: $background-color;
+    border-radius: $border-radius;
+    box-shadow: $box-shadow;
+    width: $width;
+    max-width: $max-width;
+    white-space: $white-space;
+  }
+
+
+  @mixin animate($name,$duration,$method,$times){
+    animation: $name $duration $method $times;
+    @keyframes colorAnimate {
+      0% {
+          background-position: 100%;
+      }
+  }
+  @keyframes contactAnimate {
+      0% {
+          background-position: 200%;
+      }
+  } 
+  
+}
+
+  @mixin beforeAfter($content,$top,$left,$width,$height,$transform,$filter){
+    content: $content;
+    position: absolute;
+    top: $top;
+    left:$left;
+    width:$width;
+    height:$height;
+    transform: $transform;
+    filter:$filter;
+  }
+
+  @mixin padding($top,$right, $bottom,$left) {
+    padding-top: $top;
+    padding-right: $right;
+    padding-bottom: $bottom;
+    padding-left: $left;
+  }
+

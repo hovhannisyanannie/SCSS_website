@@ -1,0 +1,148 @@
+@import "https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700&display=swap";
+@import "https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap";
+@import './typography';
+@import './extends';
+
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	outline: none;
+	list-style: none;
+    transition: all 1s linear;
+}
+
+body{
+    font-family: $font-stack;
+    overflow-x: hidden!important;
+}
+
+.wrapper-size{
+    max-width: 1328px;
+    width:100%;
+    margin:0 auto;
+}
+
+img{
+    display: inline-block;
+    vertical-align: middle;
+    max-width: 100%;
+}
+
+a{
+    color: inherit;
+    display: inline-block
+}
+
+span{
+    display: inline-block;
+}
+
+select {
+    background: none;	
+}
+
+.text-fill{
+    @extend %fill-text;
+}
+
+.relative{
+    position: relative;
+}
+
+.center{
+    text-align: center!important;
+}
+
+.padding-col{
+    @include padding(null,16px, null,16px);
+	@include  mediaType(media-xl){
+		@include padding(null,4%,null,4%!important);
+	}
+}
+.flex-base{
+    @extend %flex-base;
+}
+
+.flex-between{
+	@extend %flex-between;
+}
+
+.flex-align{
+    @extend %flex-align;
+}
+
+.flex-center-col{
+    @extend %flex-center-col;
+}
+
+.flex-around{
+    @extend %flex-around;
+}
+
+.flex-center-end{
+   @extend %flex-center-end;
+}
+
+.flex-end{
+   @extend %flex-end;
+}
+.flex-wrap{
+    @extend %flex-wrap;
+}
+
+.flex-wrap-bet{
+    @extend %flex-wrap-bet;
+}
+
+.flex-start{
+    @extend %flex-start;
+}
+.animate{
+    opacity: 0;
+}
+
+.animate.show{
+    opacity: 1;
+    transition: 3s ease;
+}
+
+
+.swiper-button-prev::after, 
+.swiper-button-next::after{
+    content: none;
+}  
+
+@include mediaType(media-md){
+	.full-width{
+        flex: 0 0 100%!important;
+        max-width: 100%;
+        }
+    .full-text{
+        max-width: 100%!important;
+        width: 100%!important;
+        } 
+    .position-initial{
+        position: initial!important;
+        }
+}
+
+@include mediaType(media-md){
+	.media-height{
+			height: initial!important;  
+			min-height: initial!important;
+	}
+}
+
+@include mediaType(media-sm){
+	main .social__wrapper *::before, .mission *::after, 
+    .areas *::after, 
+    .areas *::before{
+        content: none!important;
+    }
+}

@@ -1,0 +1,43 @@
+@use "sass:math";
+
+
+.w-29{
+    flex: 0 0 math.round(math.div(390px, 1328px) * 100%);//figma—ում տվյալ block—ի width-ը ու container-ի width-ը
+	max-width: 100%;
+}
+
+.w-31{
+    flex: 0 0 math.round(math.div(413px, 1328px) * 100%);
+	max-width: 100%;
+}
+
+.w-34{
+    flex: 0 0 math.round(math.div(456px, 1328px) * 100%);
+	max-width: 100%;
+}
+
+.w-42{
+    flex: 0 0 math.round(math.div(552px, 1328px) * 100%);
+	max-width: 100%;
+}
+
+.w-47{
+    flex: 0 0 math.round(math.div(625px, 1328px) * 100%);
+	max-width: 100%;
+} 
+
+.w-49{
+    flex: 0 0 math.round(math.div(648px, 1328px) * 100%);
+	max-width: 100%;
+}
+
+.w-51{
+    flex: 0 0 math.round(math.div(679px, 1328px) * 100%);
+	max-width: 100%;
+}
+.w-half-55{
+    flex: 0 0 math.round(math.div(368px, 664px) * 100%);
+	max-width: 100%;
+}
+
+

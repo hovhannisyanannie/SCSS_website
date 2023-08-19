@@ -1,0 +1,76 @@
+
+%flex-between {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+ %flex-base{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  %flex-center-col{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+ %flex-align{
+    display: flex;
+    align-items: center;
+ }
+
+%flex-around{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+%flex-center-end{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+%flex-end{
+    display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+}
+
+%flex-start{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+%flex-wrap{
+    display: flex;
+	flex-wrap: wrap;
+}
+
+%flex-wrap-bet{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+%fill-text{
+    -webkit-background-clip: text!important;
+    -webkit-text-fill-color: transparent!important; 
+}
+
+%arrow-icon{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: initial;
+    top: initial;
+    width: 60px!important;
+    height: 60px!important;
+    border-radius: 50%;
+    // border: 1px solid #99999933;
+    background-color: $gray;
+    cursor: pointer;
+  }
