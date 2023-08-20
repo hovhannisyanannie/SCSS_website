@@ -4,7 +4,7 @@ const searchBar=document.querySelector(".header__wrapper__search");
 const burgerMenu=document.querySelector("#burger-menu");
 const navbar=document.querySelector(".navbar");
 const block=document.querySelector('.events-block');
-const slider=document.querySelector('.events-body');
+const sliderBoxes=document.querySelector('.events-body');
 const more=document.querySelectorAll(".more");
 const loadMore=document.querySelector("#load-more");
 

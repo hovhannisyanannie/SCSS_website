@@ -208,7 +208,6 @@ main .events__slider .arrow-icon-right, main .events__slider .arrow-icon-left {
   text-decoration: none;
   outline: none;
   list-style: none;
-  transition: all 1s linear;
 }
 
 body {
@@ -354,8 +353,11 @@ header {
 }
 header .header__wrapper__burger {
   display: none;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
+}
+header .header__wrapper__burger .fa-times {
+  font-size: 26px;
 }
 @media only screen and (max-width: 992px) {
   header .header__wrapper__burger {
@@ -422,6 +424,9 @@ header .header__wrapper .navbar__item::before {
 }
 header .header__wrapper .navbar__item:first-child::before {
   content: none;
+}
+header .header__wrapper .navbar__item:last-child .fa-times::before {
+  font-size: 18px;
 }
 header .header__wrapper .navbar #navbar-search {
   cursor: pointer;

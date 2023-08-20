@@ -19,8 +19,11 @@ header {
 	.header__wrapper {
 		&__burger{
 			display: none;
-			font-size: 24px;
+			font-size: 20px;
 			cursor: pointer;
+			.fa-times{
+				font-size: 26px;
+			}
 			@include mediaType(media-md){
 				display: block;
 			}
@@ -72,6 +75,14 @@ header {
 					&::before {
 						content: none;
 					}
+				}
+				&:last-child {
+					.fa-times{
+						&::before {
+							font-size: 18px;
+						}
+					}
+						
 				}
 			}
 			#navbar-search {
