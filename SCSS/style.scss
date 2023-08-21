@@ -482,22 +482,6 @@ main {
                 border-radius: 32px;
                 background: #F8F8F8;
 				overflow: hidden;
-				.events__content{
-					&.active{
-						.more{
-							&::before{
-								content: "Read less"!important;
-							}
-						}
-						.more-text {
-							display: block!important;
-					  }	
-					}	
-				}
-				.more-text {
-					display: none;
-				  }
-
 				@include mediaType(media-xl){
 					padding-bottom: 15px;
 				}				
@@ -521,9 +505,22 @@ main {
                 }
                 .events__content {
                     padding: 0px 32px 0px 32px;
+					&.active{
+						.more{
+							&::before{
+								content: "Read less"!important;
+							}
+						}
+						.more-text {
+							display: block!important;
+					  }	
+					}	
 					@include mediaType(media-lg){
 						padding: 0px 16px;
 					}
+					.more-text {
+						display: none;
+					  }
                     &__footer {
 						margin-top: 12px;
                         .more {

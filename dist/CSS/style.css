@@ -925,15 +925,6 @@ main .events__block {
   background: #F8F8F8;
   overflow: hidden;
 }
-main .events__block .events__content.active .more::before {
-  content: "Read less" !important;
-}
-main .events__block .events__content.active .more-text {
-  display: block !important;
-}
-main .events__block .more-text {
-  display: none;
-}
 @media only screen and (max-width: 1440px) {
   main .events__block {
     padding-bottom: 15px;
@@ -967,10 +958,19 @@ main .events__block .events-image div span {
 main .events__block .events__content {
   padding: 0px 32px 0px 32px;
 }
+main .events__block .events__content.active .more::before {
+  content: "Read less" !important;
+}
+main .events__block .events__content.active .more-text {
+  display: block !important;
+}
 @media only screen and (max-width: 1200px) {
   main .events__block .events__content {
     padding: 0px 16px;
   }
+}
+main .events__block .events__content .more-text {
+  display: none;
 }
 main .events__block .events__content__footer {
   margin-top: 12px;
