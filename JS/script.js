@@ -47,9 +47,10 @@ for(let i=0;i<more.length;i++){
 }
 
 
-var swiper = new Swiper(".events__swiper", {
+var swiper = new Swiper(".events__swiper",{
     spaceBetween: 45,
     grabCursor: "true",
+    // loop:true,
     speed: 1000,
     navigation: {
       nextEl: ".arrow-icon-right",

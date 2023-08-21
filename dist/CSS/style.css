@@ -975,9 +975,6 @@ main .events__block .events__content {
 main .events__block .events__content__footer {
   margin-top: 12px;
 }
-main .events__block .events__content__footer:hover {
-  transform: translateX(12px);
-}
 main .events__block .events__content__footer .more {
   display: flex;
   align-items: center;
